@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Rodar Testes Cucumber",
+            "type": "shell",
+            "command": "mvn",
+            "args": [
+                "test",
+                "-Dtest=CucumberRunner"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/back-end"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Executa a suíte de testes do Cucumber dentro da pasta back-end usando o Maven."
+        }
+    ]
+}
